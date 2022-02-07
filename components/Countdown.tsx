@@ -29,7 +29,7 @@ export default function Countdown() {
 	}, 1000);
 
 	return (
-		<div className='grid grid-flow-col gap-5 text-center auto-cols-max'>
+		<div className='grid grid-flow-col gap-1 md:gap-5 text-center auto-cols-max text-sm'>
 			<div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content'>
 				<span className='font-mono text-5xl countdown'>
 					<span
@@ -62,7 +62,7 @@ export default function Countdown() {
 				</span>
 				hours
 			</div>
-			<div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content'>
+			<div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content row-start-2 col-start-1 md:row-auto md:col-auto'>
 				<span className='font-mono text-5xl countdown'>
 					<span
 						style={
@@ -74,7 +74,7 @@ export default function Countdown() {
 				</span>
 				min
 			</div>
-			<div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content'>
+			<div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content row-start-2 col-start-2 md:row-auto md:col-auto'>
 				<span className='font-mono text-5xl countdown'>
 					<span
 						style={
