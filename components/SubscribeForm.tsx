@@ -6,12 +6,7 @@ type FormData = {
 };
 
 export default function SubscribeForm() {
-	const {
-		register,
-		setValue,
-		handleSubmit,
-		formState: { errors }
-	} = useForm<FormData>({
+	const { register, handleSubmit } = useForm<FormData>({
 		defaultValues: {
 			email: ''
 		}
@@ -19,10 +14,20 @@ export default function SubscribeForm() {
 	const onSubmit = handleSubmit((data) => console.log(data));
 
 	return (
-		<form>
-			<label>Email</label>
-			<input {...register('email')} />
-			<button type='submit'>Subscribe</button>
+		<form className='form-control' onSubmit={onSubmit}>
+			<label className='label'>
+				<span className='label-text'>Subscribe to get updated!</span>
+			</label>
+			<div className='flex space-x-2'>
+				<input
+					className='w-full input input-primary input-bordered'
+					placeholder='email'
+					{...register('email')}
+				/>
+				<button type='submit' className='btn btn-primary'>
+					Subscribe
+				</button>
+			</div>
 		</form>
 	);
 }
