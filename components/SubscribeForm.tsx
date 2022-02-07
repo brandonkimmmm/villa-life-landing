@@ -16,7 +16,7 @@ export default function SubscribeForm() {
 	return (
 		<form className='form-control items-center' onSubmit={onSubmit}>
 			<label className='label'>
-				<span className='label-text'>Subscribe to get updated!</span>
+				<span className='label-text'>Subscribe to get updates!</span>
 			</label>
 			<div className='flex space-x-2'>
 				<input
