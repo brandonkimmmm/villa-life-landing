@@ -1,26 +1,18 @@
 import type { NextPage } from 'next';
 import Countdown from '../components/Countdown';
 import SubscribeForm from '../components/SubscribeForm';
-import { MailIcon } from '@heroicons/react/outline';
+import SocialMediaLinks from '../components/SocialMediaLinks';
 
 const Home: NextPage = () => {
 	return (
-		<div className='flex flex-col h-screen space-y-24 justify-center w-96'>
+		<div className='flex flex-col h-screen space-y-24 justify-center items-center'>
 			<h1 className='font-semibold text-6xl'>Villa Life</h1>
-			<Countdown />
 			<h2 className='font-semibold text-2xl'>
-				Healthcare is changing with time
+				Streamlined short term luxury rental coming soon!
 			</h2>
-			<p>
-				It is going to be more sophisticated and simple. Stay tuned.
-				Coming soon.
-			</p>
+			<Countdown />
 			<SubscribeForm />
-			<div className='flex flex-col'>
-				<span className='inline-flex'>
-					<MailIcon className='h-4' /> hello@stayhiup.com
-				</span>
-			</div>
+			<SocialMediaLinks />
 		</div>
 	);
 };

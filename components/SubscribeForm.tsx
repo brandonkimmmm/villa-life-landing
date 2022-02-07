@@ -14,7 +14,7 @@ export default function SubscribeForm() {
 	const onSubmit = handleSubmit((data) => console.log(data));
 
 	return (
-		<form className='form-control' onSubmit={onSubmit}>
+		<form className='form-control items-center' onSubmit={onSubmit}>
 			<label className='label'>
 				<span className='label-text'>Subscribe to get updated!</span>
 			</label>
