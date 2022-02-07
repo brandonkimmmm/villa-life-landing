@@ -20,7 +20,7 @@ export default function SubscribeForm() {
 			</label>
 			<div className='flex space-x-2'>
 				<input
-					className='w-full input input-primary input-bordered'
+					className='w-full input input-primary input-bordered text-black'
 					placeholder='email'
 					{...register('email')}
 				/>
