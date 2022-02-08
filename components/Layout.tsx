@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Layout({ children }: { children: ReactNode }) {
 	return (
@@ -12,7 +13,15 @@ export default function Layout({ children }: { children: ReactNode }) {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className='bg-[url(https://images.unsplash.com/photo-1618064541372-289bdb6f5b7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3600&q=80)] bg-black bg-opacity-30 bg-center bg-blend-overlay'>
+			<main className='bg-black relatvie'>
+				<div className='absolute left-0 top-0'>
+					<Image
+						alt='logo'
+						src='/logo.png'
+						width={300}
+						height={100}
+					/>
+				</div>
 				{children}
 			</main>
 		</>
