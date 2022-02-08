@@ -6,6 +6,7 @@ const renderer = ({
 	days,
 	hours,
 	minutes,
+	seconds,
 	completed
 }: CountdownRenderProps) => {
 	if (completed) {
@@ -20,6 +21,9 @@ const renderer = ({
 					<span>Days: {days}</span>
 					<span>Hours: {hours}</span>
 					<span>Minutes: {minutes}</span>
+					<span suppressHydrationWarning={true}>
+						Seconds: {seconds}
+					</span>
 				</div>
 			</div>
 		);
