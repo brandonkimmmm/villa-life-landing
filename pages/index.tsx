@@ -8,12 +8,11 @@ import Image from 'next/image';
 const Home: NextPage = () => {
 	return (
 		<div className='flex flex-col h-screen w-full py-4 space-y-8 md:space-y-14 justify-center items-center'>
-			<Image
+			<img
 				alt='logo'
 				src='/logo.png'
 				width={300}
 				height={100}
-				layout='fixed'
 				className='mx-auto'
 			/>
 			<Countdown />
