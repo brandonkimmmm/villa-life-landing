@@ -6,7 +6,7 @@ import Locations from '../components/Locations';
 
 const Home: NextPage = () => {
 	return (
-		<div className='flex flex-col h-screen space-y-10 md:space-y-14 justify-center items-center'>
+		<div className='flex flex-col h-screen space-y-8 md:space-y-14 justify-center items-center'>
 			<Countdown />
 			<Locations />
 			<SubscribeForm />

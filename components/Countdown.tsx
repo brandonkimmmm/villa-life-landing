@@ -17,9 +17,9 @@ const renderer = ({
 		return <h1 className='text-4xl font-semibold'>RELEASED!</h1>;
 	} else {
 		return (
-			<div className='flex flex-col items-center space-y-6'>
-				<h1 className='font-semibold text-2xl md:text-4xl'>
-					Coming on {RELEASE_DATE.toFormat('LLL dd, yyyy')}
+			<div className='flex flex-col items-center space-y-4 md:space-y-6'>
+				<h1 className='font-semitbold text-2xl md:text-4xl'>
+					Going Live {RELEASE_DATE.toFormat('LLL dd, yyyy')}
 				</h1>
 				<div className='columns-4 text-xl md:text-5xl gap-2 md:gap-3'>
 					<div className='w-20 md:w-28'>

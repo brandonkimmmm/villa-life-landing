@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className='bg-black'>
-				<div className='absolute top-8 md:top-20 left-1/2 transform -translate-x-1/2'>
+				<div className='absolute top-6 md:top-10 left-1/2 transform -translate-x-1/2'>
 					<Image
 						alt='logo'
 						src='/logo.png'

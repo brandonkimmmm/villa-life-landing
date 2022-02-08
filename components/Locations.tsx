@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Locations() {
 	return (
-		<div className='inline-flex justify-between w-full max-w-xl px-4 text-lg md:text-2xl font-cursive space-x-2'>
+		<div className='inline-flex justify-between w-full max-w-md px-4 text-lg md:text-2xl font-cursive space-x-2'>
 			<div className='flex flex-col items-center space-y-4'>
 				<Image
 					alt='barbados'
