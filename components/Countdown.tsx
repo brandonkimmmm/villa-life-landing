@@ -17,13 +17,35 @@ const renderer = ({
 				<h1 className='font-semibold text-2xl md:text-4xl'>
 					Coming on {RELEASE_DATE.toFormat('LLL dd, yyyy')}
 				</h1>
-				<div className='inline-flex space-x-2 md:text-xl font-semibold'>
-					<span>Days: {days}</span>
-					<span>Hours: {hours}</span>
-					<span>Minutes: {minutes}</span>
-					<span suppressHydrationWarning={true}>
-						Seconds: {seconds}
-					</span>
+				<div className='columns-4 text-3xl md:text-5xl'>
+					<div className='flex flex-col space-y-1 items-center'>
+						<span className='font-semibold'>
+							{days < 10 ? `0${days}` : days}
+						</span>
+						<span className='text-sm uppercase'>days</span>
+					</div>
+					<div className='flex flex-col space-y-1 items-center'>
+						<span className='font-semibold'>
+							{hours < 10 ? `0${hours}` : hours}
+						</span>
+						<span className='text-sm uppercase'>hrs</span>
+					</div>
+					<div className='flex flex-col space-y-1 items-center'>
+						<span className='font-semibold'>
+							{minutes < 10 ? `0${minutes}` : minutes}
+						</span>
+						<span className='text-sm uppercase'>mins</span>
+					</div>
+
+					<div className='flex flex-col space-y-1 items-center'>
+						<span
+							suppressHydrationWarning={true}
+							className='font-semibold'
+						>
+							{seconds < 10 ? `0${seconds}` : seconds}
+						</span>
+						<span className='text-sm uppercase'>secs</span>
+					</div>
 				</div>
 			</div>
 		);
