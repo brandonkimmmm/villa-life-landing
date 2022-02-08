@@ -6,6 +6,13 @@ module.exports = {
 	plugins: [
 		require('daisyui')
 	],
+	theme: {
+		extend: {
+			fontFamily: {
+				cursive: ['"Mr Dafoe"']
+			}
+		}
+	},
 	daisyui: {
 		themes: [
 			{

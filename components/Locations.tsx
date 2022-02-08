@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Locations() {
 	return (
-		<div className='inline-flex justify-between w-full max-w-2xl'>
+		<div className='inline-flex justify-between w-full max-w-xl'>
 			<div className='flex flex-col items-center space-y-4'>
 				<Image
 					alt='barbados'
@@ -11,7 +11,7 @@ export default function Locations() {
 					width={125}
 					height={125}
 				/>
-				<h2>Barbados</h2>
+				<h2 className='font-cursive text-2xl'>Barbados</h2>
 			</div>
 			<div className='flex flex-col items-center space-y-4'>
 				<Image
@@ -20,7 +20,7 @@ export default function Locations() {
 					width={125}
 					height={125}
 				/>
-				<h2>St. Martin</h2>
+				<h2 className='font-cursive text-2xl'>St. Martin</h2>
 			</div>
 			<div className='flex flex-col items-center space-y-4'>
 				<Image
@@ -29,7 +29,7 @@ export default function Locations() {
 					width={125}
 					height={125}
 				/>
-				<h2>Mexico</h2>
+				<h2 className='font-cursive text-2xl'>Mexico</h2>
 			</div>
 		</div>
 	);
