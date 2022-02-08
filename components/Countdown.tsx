@@ -9,15 +9,18 @@ const renderer = ({
 	completed
 }: CountdownRenderProps) => {
 	if (completed) {
-		return <h1>Completed!</h1>;
+		return <h1 className='text-4xl font-semibold'>RELEASED!</h1>;
 	} else {
 		return (
-			<div className='inline-flex space-x-2'>
-				<span className='text-xl font-semibold'>Days: {days}</span>
-				<span className='text-xl font-semibold'>Hours: {hours}</span>
-				<span className='text-xl font-semibold'>
-					Minutes: {minutes}
-				</span>
+			<div className='flex flex-col items-center space-y-4'>
+				<h1 className='font-semibold text-2xl md:text-4xl'>
+					Coming on {RELEASE_DATE.toFormat('LLL dd, yyyy')}
+				</h1>
+				<div className='inline-flex space-x-2 md:text-xl font-semibold'>
+					<span>Days: {days}</span>
+					<span>Hours: {hours}</span>
+					<span>Minutes: {minutes}</span>
+				</div>
 			</div>
 		);
 	}
@@ -25,14 +28,6 @@ const renderer = ({
 
 export default function Countdown() {
 	return (
-		<div className='flex flex-col items-center space-y-4'>
-			<h1 className='font-semibold text-4xl'>
-				Coming on {RELEASE_DATE.toFormat('LLL dd, yyyy')}
-			</h1>
-			<ReactCountdown
-				date={RELEASE_DATE.toJSDate()}
-				renderer={renderer}
-			/>
-		</div>
+		<ReactCountdown date={RELEASE_DATE.toJSDate()} renderer={renderer} />
 	);
 }
