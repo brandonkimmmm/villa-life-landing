@@ -14,7 +14,10 @@ export default function SubscribeForm() {
 	const onSubmit = handleSubmit((data) => console.log(data));
 
 	return (
-		<button type='submit' className='btn bg-black outline px-10'>
+		<button
+			type='submit'
+			className='btn bg-black outline focus:outline-white px-10'
+		>
 			Subscribe Now
 		</button>
 		// <form className='form-control items-center' onSubmit={onSubmit}>

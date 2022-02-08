@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className='bg-black relatvie'>
+			<main className='bg-black'>
 				<div className='absolute left-0 top-0'>
 					<Image
 						alt='logo'
